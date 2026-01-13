@@ -1,10 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <title>review html css</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xavier's Python Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-</body>
-</html>
+    <header>
+        <nav>
+            <div class="logo">Xavier's Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="hero">
+        <h1>Hello, I'm Xavier</h1>
+        <p>Junior at [Your School Name]. I'm a creative Python programmer blending code with music and graphics.</p>
+        <p><strong>Portfolio Purpose:</strong> To show my skills in creativity.</p>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="project">
+            <div class="project-embed">
+                <iframe src="https://earsketch.gatech.edu/" title="EarSketch Music Project"></iframe>
+            </div>
+            <div class="project-info">
+                <h3>EarSketch Music Project</h3>
+                <p><strong>Type:</strong> Python, EarSketch, Audio Programming</p>
+                <p><strong>Description:</strong> I created a custom music track using Python and EarSketch, combining sounds, beats, and effects to make original music. This project helped me develop problem-solving skills and creative coding abilities.</p>
+                <p><strong>Reflection:</strong> I learned how to manipulate sound programmatically, layer tracks, and adjust timing. Compared to my earlier work, this project shows significant growth in creativity and technical skills.</p>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project">
+            <div class="project-embed">
+                <iframe src="https://trinket.io/python" title="Holiday Drawing Project"></iframe>
+            </div>
+            <div class="project-info">
+                <h3>Holiday Christmas Drawing</h3>
+                <p><strong>Type:</strong> Python, Turtle Graphics</p>
+                <p><strong>Description:</strong> Using Python’s Turtle library, I created holiday-themed drawings like trees, ornaments, and snowflakes. Loops and dynamic colors helped make the artwork more intricate.</p>
+                <p><strong>Reflection:</strong> This project taught me how to programmatically control graphics, apply loops creatively, and combine coding with visual design.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>You can reach me at <a href="mailto:xavier@example.com">xavier@example.com</a>.</p>
+        <p>Check out my GitHub: <a href="https://github.com/xavier734" target="_blank">github.com/xavier734</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Xavier. All rights reserved.</p>
+    /* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+a {
+    color: #2c7be5;
+    text-decoration: none;
+}
+
+header {
+    background-color: #2c7be5;
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #e3f2fd;
+}
+
+.projects-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    align-items: flex-start;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2rem;
+}
+
+.project-embed iframe {
+    width: 400px;
+    height: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.project-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.project-info h3 {
+    margin-top: 0;
+    color: #2c7be5;
+}
+
+.contact-section {
+    padding: 2rem;
+    background: #e3f2fd;
+    text-align: center;
+}
+
+footer {
+    background-color: #2c7be5;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-embed iframe {
+        width: 100%;
+        height: 200px;
+    }
+}
